@@ -1,0 +1,100 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  --light-orange: #ffeccd;
+  --md-light-orange: #ffb632;
+  --md-orange: #ffa400;
+
+  --dark-blue: #2f5180;
+  --dark-green: #15755d;
+
+  --light-grey: #c6c6c6;
+  --dark-grey: #414143;
+
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-hg: 32px;
+
+  --font-size-lg: 24px;
+  --font-size-xlg: 36px;
+  --font-size-hg: 48px;
+
+  --text-shadow: 1px 1px 0 #ce8a11;
+  --border-radius: 4px;
+}
+
+.getaccept-logo {
+  padding-top: var(--spacing-lg);
+  margin: auto;
+  width: 50%;
+}
+
+.counter-container {
+  margin: var(--spacing-hg) auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  min-width: 260px;
+  background-color: var(--light-orange);
+  padding: var(--spacing-hg);
+  border-radius: var(--border-radius);
+}
+
+.greeting {
+  font-size: var(--font-size-hg);
+  color: var(--md-orange);
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  text-shadow: var(--text-shadow);
+}
+.emoji {
+  font-size: var(--font-size-hg);
+  margin: 0;
+  margin-top: var(--spacing-hg);
+  padding: 0;
+}
+.counter-button {
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  margin: var(--spacing-md);
+  font-size: var(--font-size-lg);
+  color: white;
+  outline: none;
+  min-width: 150px;
+  border-radius: var(--border-radius);
+}
+
+.counter-button-blue {
+  background-color: var(--dark-blue);
+}
+
+.counter-button-green {
+  background-color: var(--dark-green);
+}
+
+.reset-button {
+  background-color: var(--dark-grey);
+  color: white;
+  transition: all 0.2s;
+}
+
+.reset-button:hover {
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+.counter-text {
+  margin: 0;
+  font-weight: 900;
+  font-size: var(--font-size-xlg);
+  color: var(--md-light-orange);
+  text-shadow: var(--text-shadow);
+}
+
+.wrapper {
+  display: flex;
+}
