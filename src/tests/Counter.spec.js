@@ -23,6 +23,7 @@ describe("Counter", () => {
     fireEvent.click(getByTestId("reset-button"));
     expect(getByTestId("counter-value")).toHaveTextContent("Counter value: 0");
   });
+
   it("should have the correct class depending on amount of clicks", () => {
     expect(getByTestId("button")).toHaveClass("counter-button-green");
     fireEvent.click(getByTestId("button"));

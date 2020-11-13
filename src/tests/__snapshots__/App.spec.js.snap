@@ -78,5 +78,41 @@ exports[`should take a snapshot 1`] = `
       </button>
     </div>
   </div>
+  <div
+    class="counter-container"
+  >
+    <div
+      class="wrapper"
+    >
+      <input
+        class="input"
+        data-testid="valone"
+        placeholder="0"
+        type="number"
+        value=""
+      />
+      <p
+        class="counter-text"
+      >
+        +
+      </p>
+      <input
+        class="input"
+        data-testid="valtwo"
+        placeholder="0"
+        type="number"
+        value=""
+      />
+    </div>
+    <div>
+      <p
+        class="counter-text"
+      />
+      <p
+        class="counter-text"
+        data-testid="sum"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
