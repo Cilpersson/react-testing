@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This is a repo created with [`npx create-react-app`](https://create-react-app.dev/docs/getting-started), by using it to setup react projects getting started with test will be a piece of 🧁 Projects created with it have out of the box support for both jest and React Testing Library 🎉
+This is a repo created with [`npx create-react-app`](https://create-react-app.dev/docs/getting-started) for anyone wanting to start testing react components. By using `npx create-react-app` to setup react projects getting started with test will be a piece of 🧁 Projects created with it have out of the box support for both Jest and React Testing Library 🎉
 
 ### Valuable links
 
