@@ -3,20 +3,46 @@ import { render, fireEvent } from "@testing-library/react";
 import Addition from "../components/Addition";
 
 describe("Addition", () => {
-  let getByTestId;
-  beforeEach(() => {
-    ({ getByTestId } = render(<Addition />));
-  });
+  it("should calculate the sum of of the two input values", () => {
+    //Render component
+    const { getByTestId } = render(<Addition />);
 
-  it("should calculate the sum of of the values", () => {
-    const inputOne = getByTestId("valone");
-    const inputTwo = getByTestId("valtwo");
+    // Get values with the help of data-testid and store in variables
+    const inputOne = getByTestId("val-one");
+    const inputTwo = getByTestId("val-two");
     const sum = getByTestId("sum");
 
-    fireEvent.change(inputOne, { target: { value: 5 } });
-    fireEvent.change(inputTwo, { target: { value: 15 } });
+    //Think of fireEvent as the test worlds answer to onClick, onChange, onFocus, onBlur etc.
+    fireEvent.change(inputOne, { target: { value: 2 } });
+    fireEvent.change(inputTwo, { target: { value: 5 } });
 
     const totalOfInputs = +inputOne.value + +inputTwo.value;
     expect(sum).toHaveTextContent(totalOfInputs);
   });
+
+  it.each`
+    valueOne | valueTwo
+    ${0}     | ${8}
+    ${10}    | ${6}
+    ${7}     | ${10}
+  `(
+    "should caluclate the sum of $valueOne and $valueTwo",
+    ({ valueOne, valueTwo }) => {
+      //Render component
+      const { getByTestId } = render(<Addition />);
+
+      // Get values with the help of data-testid and store in variables
+      const inputOne = getByTestId("val-one");
+      const inputTwo = getByTestId("val-two");
+      const sum = getByTestId("sum");
+
+      //Think of fireEvent as the test worlds answer to onClick, onChange, onFocus, onBlur etc.
+      fireEvent.change(inputOne, { target: { value: valueOne } });
+      fireEvent.change(inputTwo, { target: { value: valueTwo } });
+
+      const totalOfInputs = +inputOne.value + +inputTwo.value;
+
+      expect(sum).toHaveTextContent(totalOfInputs);
+    }
+  );
 });

@@ -38,7 +38,7 @@ exports[`should take a snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="counter-container"
+    class="container"
   >
     <h1
       class="greeting"
@@ -53,7 +53,7 @@ exports[`should take a snapshot 1`] = `
     </span>
   </div>
   <div
-    class="counter-container"
+    class="container"
   >
     <p
       class="counter-text"
@@ -62,7 +62,7 @@ exports[`should take a snapshot 1`] = `
       Counter value: 0
     </p>
     <div
-      class="wrapper"
+      class="wrapper-row"
     >
       <button
         class="counter-button counter-button-green"
@@ -79,14 +79,14 @@ exports[`should take a snapshot 1`] = `
     </div>
   </div>
   <div
-    class="counter-container"
+    class="container"
   >
     <div
-      class="wrapper"
+      class="wrapper-row"
     >
       <input
         class="input"
-        data-testid="valone"
+        data-testid="val-one"
         placeholder="0"
         type="number"
         value=""
@@ -98,7 +98,7 @@ exports[`should take a snapshot 1`] = `
       </p>
       <input
         class="input"
-        data-testid="valtwo"
+        data-testid="val-two"
         placeholder="0"
         type="number"
         value=""

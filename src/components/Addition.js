@@ -11,8 +11,8 @@ const Addition = () => {
   };
 
   return (
-    <div className="counter-container">
-      <div className="wrapper">
+    <div className="container">
+      <div className="wrapper-row">
         <input
           className="input"
           placeholder="0"
@@ -21,7 +21,7 @@ const Addition = () => {
           type="number"
           value={valueOne}
           onChange={(event) => setValueOne(event.target.value)}
-          data-testid="valone"
+          data-testid="val-one"
         />
         <p className="counter-text">+</p>
         <input
@@ -32,7 +32,7 @@ const Addition = () => {
           type="number"
           value={valueTwo}
           onChange={(event) => setValueTwo(event.target.value)}
-          data-testid="valtwo"
+          data-testid="val-two"
         />
       </div>
       <div>

@@ -5,7 +5,6 @@ import Counter from "../components/Counter";
 describe("Counter", () => {
   let getByTestId;
 
-  // Börja med att lägga till render för varje test för att sedan visa hur man kan använda beforeEach
   beforeEach(() => {
     ({ getByTestId } = render(<Counter />));
   });
@@ -33,10 +32,8 @@ describe("Counter", () => {
   it.each`
     clicks | className
     ${0}   | ${"counter-button-green"}
-    ${2}   | ${"counter-button-green"}
+    ${22}  | ${"counter-button-green"}
     ${7}   | ${"counter-button-blue"}
-    ${29}  | ${"counter-button-blue"}
-    ${30}  | ${"counter-button-green"}
     ${5}   | ${"counter-button-blue"}
   `(
     "should have class $className if clicked $clicks amount of times",

@@ -20,6 +20,7 @@
   --font-size-hg: 48px;
 
   --text-shadow: 1px 1px 0 #ce8a11;
+  --box-shadow: 4px 4px 0 var(--md-orange), 6px 6px 0 #ce8a11;
   --border-radius: 4px;
 }
 
@@ -33,7 +34,7 @@
   width: 40%;
 }
 
-.counter-container {
+.container {
   margin: var(--spacing-hg) auto;
   display: flex;
   justify-content: center;
@@ -44,6 +45,7 @@
   background-color: var(--light-orange);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .greeting {
@@ -102,7 +104,7 @@
   align-items: center;
 }
 
-.wrapper {
+.wrapper-row {
   display: flex;
 }
 

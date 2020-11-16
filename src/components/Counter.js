@@ -17,11 +17,11 @@ const Counter = () => {
   };
 
   return (
-    <div className="counter-container">
+    <div className="container">
       <p className="counter-text" data-testid="counter-value">
         Counter value: {value}
       </p>
-      <div className="wrapper">
+      <div className="wrapper-row">
         <button
           className={`counter-button ${setCSSClass()}`}
           data-testid="button"
