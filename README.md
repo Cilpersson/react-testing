@@ -11,3 +11,5 @@ This is a repo created with [`npx create-react-app`](https://create-react-app.de
 **- [Free code camp guide to React Testing Library 💪](https://www.freecodecamp.org/news/8-simple-steps-to-start-testing-react-apps-using-react-testing-library-and-jest/)**
 
 **- [Discord for React Testing Library 🤓](https://discord.com/invite/c6JN9fM)**
+
+**- [In depth video on React Testing Library 📼](https://www.youtube.com/watch?v=ZmVBCpefQe8)**
