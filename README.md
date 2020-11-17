@@ -1,4 +1,4 @@
-# Technigo testing repository
+# React testing repository
 
 ## What is this?
 
