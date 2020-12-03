@@ -10,17 +10,23 @@ describe("Counter", () => {
   });
 
   it("should equal 0 before any buttons are clicked", () => {
-    expect(getByTestId("counter-value")).toHaveTextContent("Counter value: 0");
+    expect(getByTestId("counter-value").textContent).toEqual(
+      "Counter value: 0"
+    );
   });
 
   it("should increase value of value when increase button is clicked", () => {
     fireEvent.click(getByTestId("button"));
-    expect(getByTestId("counter-value")).toHaveTextContent("Counter value: 1");
+    expect(getByTestId("counter-value").textContent).toEqual(
+      "Counter value: 1"
+    );
   });
 
   it("should reset the counter when the button is clicked", () => {
     fireEvent.click(getByTestId("reset-button"));
-    expect(getByTestId("counter-value")).toHaveTextContent("Counter value: 0");
+    expect(getByTestId("counter-value").textContent).toEqual(
+      "Counter value: 0"
+    );
   });
 
   it("should have the correct class depending on amount of clicks", () => {
@@ -43,7 +49,7 @@ describe("Counter", () => {
         fireEvent.click(getByTestId("button"));
       }
       expect(getByTestId("button")).toHaveClass(className);
-      expect(getByTestId("counter-value")).toHaveTextContent(
+      expect(getByTestId("counter-value").textContent).toEqual(
         `Counter value: ${clicks}`
       );
     }

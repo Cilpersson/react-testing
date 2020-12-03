@@ -16,8 +16,9 @@ describe("Addition", () => {
     fireEvent.change(inputOne, { target: { value: 2 } });
     fireEvent.change(inputTwo, { target: { value: 5 } });
 
+    //Adding + to make sure that all values are of type number
     const totalOfInputs = +inputOne.value + +inputTwo.value;
-    expect(sum).toHaveTextContent(totalOfInputs);
+    expect(+sum.textContent).toEqual(totalOfInputs);
   });
 
   it.each`
@@ -40,9 +41,10 @@ describe("Addition", () => {
       fireEvent.change(inputOne, { target: { value: valueOne } });
       fireEvent.change(inputTwo, { target: { value: valueTwo } });
 
+      //Adding + to make sure that all values are of type number
       const totalOfInputs = +inputOne.value + +inputTwo.value;
 
-      expect(sum).toHaveTextContent(totalOfInputs);
+      expect(+sum.textContent).toEqual(totalOfInputs);
     }
   );
 });
