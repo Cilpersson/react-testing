@@ -29,6 +29,7 @@ describe("Counter", () => {
     expect(getByTestId("button")).toHaveClass("counter-button-blue");
   });
 
+  // Alternative solution with it.each
   it.each`
     clicks | className
     ${0}   | ${"counter-button-green"}
@@ -42,6 +43,9 @@ describe("Counter", () => {
         fireEvent.click(getByTestId("button"));
       }
       expect(getByTestId("button")).toHaveClass(className);
+      expect(getByTestId("counter-value")).toHaveTextContent(
+        `Counter value: ${clicks}`
+      );
     }
   );
 });
