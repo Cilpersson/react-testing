@@ -14,6 +14,4 @@ This is a repo created with [`npx create-react-app`](https://create-react-app.de
 
 **- [In depth video on React Testing Library 📼](https://www.youtube.com/watch?v=ZmVBCpefQe8)**
 
-#### Psst! 🙋🏽‍♂️🙋🏼‍♀️
 
-[We're hiring 🎉](https://jobs.getaccept.com/jobs/999930-frontend-developer)
